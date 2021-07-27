@@ -35,7 +35,7 @@ var longestCommonPrefix = function (strs) {
                 return longest_common_prefix
             }
         }
-        // If we've made it here, that means we iterated over all the strings anc checked their character
+        // If we've made it here, that means we iterated over all the strings and checked their character
         longest_common_prefix += first_word_current_char;
     }
     return longest_common_prefix;
