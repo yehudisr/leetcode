@@ -6,10 +6,20 @@
 // print index when element equals the S input
 
 
-function index(arr,S){
+// function index(arr,S){
 
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i]===S) return i
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i]===S) return i
+//     }
+//     return `Number ${S} is at ${i} place`
+// }
+
+function index(arr, S){
+    let results = []
+    let getIndex = arr.indexOf(S)
+    while (getIndex != - 1){
+        results.push(getIndex)
+        getIndex = arr.indexOf(S, getIndex + 1)
     }
-    return `Number ${S} is at ${i} place`
+    return `Number ${S} is at ${results} place.`
 }
