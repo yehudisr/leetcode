@@ -15,8 +15,6 @@ function maxArea(height) {
         // calculate the shortest side and the area
         let shortestSide = Math.min(height[leftIndex], height[rightIndex]);
         let area = (rightIndex - leftIndex) * shortestSide;
-
-        console.log(area)
         
         // compare area and result to update the result 
         result = Math.max(area, result);
@@ -26,7 +24,6 @@ function maxArea(height) {
         else rightIndex--;
     }
 
-    console.log(result)
     return result;
 };
 
