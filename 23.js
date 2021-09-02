@@ -21,5 +21,8 @@ function index(arr, S){
         results.push(getIndex)
         getIndex = arr.indexOf(S, getIndex + 1)
     }
+    //console.log(results)
     return `Number ${S} is at ${results} place.`
 }
+
+index([1, 3, 4, 5, 7, 5, 3], 5)
