@@ -9,3 +9,7 @@
 function evenNumbers(array, number) {
       return array.filter((x) => !(x % 2)).splice(-number);
     }
+
+    // refactor to arrow function
+    const evenNumbers = (array, number) =>
+  array.filter((x) => !(x % 2)).splice(-number)
